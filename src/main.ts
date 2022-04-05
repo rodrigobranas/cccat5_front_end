@@ -1,5 +1,14 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import router from './router'
+import ServiceFactory from './factory/ServiceFactory';
+import AxiosAdapter from './infra/AxiosAdapter';
+import Router from './router/Router'
 
-createApp(App).use(router).mount('#app')
+
+const app = createApp(App);
+const httpClient = new AxiosAdapter();
+const baseUrl = "http://localhost:3002";
+const serviceFactory = new ServiceFactory(httpClient, baseUrl);
+const router = new Router(serviceFactory);
+app.use(router.build());
+app.mount('#app')

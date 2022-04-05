@@ -8,6 +8,9 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "axios": "^0.26.1",
+    "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0"
   },
