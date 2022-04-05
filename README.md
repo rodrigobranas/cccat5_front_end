@@ -1,24 +1,10 @@
-# cccat5_front_end
+Este conteúdo é parte do curso Clean Code e Clean Architecture da Branas.io
 
-## Project setup
-```
-yarn install
-```
+Para mais informações acesse:
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+https://app.branas.io/clean-code-e-clean-architecture
 
-### Compiles and minifies for production
-```
-yarn build
-```
+Instruções:
 
-### Run your unit tests
-```
-yarn test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+npm install
+npm run test
